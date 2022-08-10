@@ -1,0 +1,142 @@
+<script>
+    console.log("Hello wolrd");
+
+    var a;
+    var b = 2;
+    console.log(a)
+    a = 7;
+    b = a;
+    console.log(a);
+
+    var MyArray = [58, 40, 10, 20, 30];
+    document.write(MyArray);
+    document.write("<br>");
+    MyArray.sort();
+    document.write(MyArray);
+    document.write("<br>");
+    console.log(MyArray[2]);
+
+    MyArray[0] = 50;
+    document.write(MyArray + "<br>");
+
+    var numbers = [[1, 2, 3], [4, 5, 6], [7, 8, 9], 10, 11];
+    var MyData = numbers[2][1];
+    document.write(MyData + "<br>");
+
+    document.write(numbers + "<br>");
+    numbers.push([12, 13, 14]);
+    document.write(numbers + "<br>");
+    numbers.pop();
+    document.write(numbers + "<br>");
+
+    //To remove first element form an array we use shift() method
+
+    let name = ["jack", "oggy", "Ray", "Shaktimaan"];
+    document.write(name + "<br>");
+    name.shift();
+    document.write(name + "<br>");
+
+    //To add emement on first postion on array we use unshift().
+
+    name.unshift("sky");
+    document.write(name + "<br>");
+
+    var a = [1, 2, 3, 4];
+    var b = ["Apple", "Ball", "Cat"];
+    var c = a.concat(b);
+    document.write(c + "<br>");
+
+    //splice() can be used add new items to an array
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.splice(2, 0, "Lemon", "Kiwi");
+    document.write(fruits);
+
+    //The first Parameter (2) defines the position where new elements should be added (spliced in).
+    //The second parameter(0) defines how many elements should be removed.
+    //The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added.
+
+
+    function call() {
+        console.log("Add this number");
+    }
+
+    call();
+
+    //function with argument
+
+    var x;
+    var z;
+    function add(a, b) {
+        console.log(a + b);
+    }
+
+    add(10, 10);
+
+    var outerWear = "T-Shirt";
+
+    function myOutfit() {
+        var outerWear = "sweater";
+        let Wear="shirt";
+        return outerWear;
+    }
+
+     let Wear="jeans";
+     console.log(Wear);
+    console.log(myOutfit());
+    console.log(outerWear);
+
+    function text(){
+        var MyText="let see how it will work";
+        return MyText;
+    }
+
+   document.write("<br>"+text());
+
+
+   function sub(){
+    var vairable="This is first line";
+    var vairable="this is second line";
+    
+   return vairable;
+   }
+
+   function mul(){
+    let multiplication="we will cehck";
+    multiplication="hello world";
+   }
+
+   //ReturnaValue from a Function with Return
+
+   function multiplication(a){
+    return a * 5;
+   }
+
+   console.log(multiplication(5));
+
+
+
+   function compare(){
+    var value=5;
+    if(value%2==0){
+        return "even";
+    }
+    else{
+        return "odd";
+    }
+   }
+
+   console.log(compare());
+
+   function equal(){
+    var value=10;
+    if(value=='10'){
+    return true;
+    }
+    else{
+        return false;
+    }
+   }
+
+   console.log(equal());
+
+</script>

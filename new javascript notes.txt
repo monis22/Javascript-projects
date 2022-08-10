@@ -1,0 +1,206 @@
+*)data-type and vairables
+
+undefined,null,boolean,string,symbol,number and object
+
+*)decalear vairable
+ var MyName="Beau" :global scope:when use it any where in the program
+
+myName=8;
+
+let Name="xyz"; function scope we dont use form outside of function
+
+const pi=3.14;:it value is doesn't change
+
+*)compound Assignment With Augmented addition.
+
+ex: var a=10;
+a=10+a; is same as a+=12;
+
+*)compound Assignment With Augmented subtraction
+ex: var a=10;
+var a=10-5 is same as a-=5;
+
+*)compound Assignment With Augmented multiplication
+ex: var a=10;
+var a=a*5 is same as a*=5;
+
+same as division
+
+var a=10;
+var a=a/10 is same as a/=10;
+
+*)Escaping Literal Quotes in String
+ 
+var MyString="Hello I am 23 year old \"let see how is it work\""
+
+output:console.log(myString);
+ I am 23 year old "see how is work".
+
+*)Escape Sequemces in String
+
+\' single quote
+\" double qoute
+\\ backslash
+\n newline
+\r carriage return
+\t tab
+\b backsapce
+\f form feed
+
+*)concatenation in javascript using +
+var string2="I am working " + string;
+console.log(string2);
+output: I am working let see how is it work
+
+*)concatenating string width plus Equals operator
+
+var myStr="This is the first sentence.
+myStr+="This is the second sentence."
+console.log(myStr);
+
+output= This is the first sentence.This is the second sentence.
+
+*)Bracket Notation to Find
+First Character in String
+
+var string="let see how is it work";
+console.log(string[0]);
+output: l
+
+*)Arrays:An array is a special variable, which can hold more than one value:
+
+const cars=[Saab", "Volvo", "BMW"];
+
+*)Replace array element
+
+var MyArray=[18,45,44];
+MyArray[0]=17;
+console.log(MyArray);
+output:17,45,44;
+
+*)Access Multi-Dimensional Array Width Indexes
+
+var numbers=[[1,2,3],[4,5,6],[7,8,9],10,11];
+var MyData=numbers[2][1];
+
+output=8;
+
+*)Manipulate Array with Push()
+To insert element in last we use push() method.
+var Array=[1,2,3];
+Array.push(4);
+console.log(Array);
+output=1,2,3,4
+
+*)pop():
+To remove element form last position from an Array we use pop()
+numbers.pop();
+document.write(numbers + "<br>");
+
+
+*)shift():
+To remove first element form an array we use shift();
+var a=[1,23,4,5];
+a.shift();
+console.log(a);
+
+output:23,4,5;
+
+*)The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements:
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.unshift("Lemon");
+
+
+*)Merging (Concatenating) Arrays
+The concat() method creates a new array by merging (concatenating) existing arrays:
+
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+const myChildren = myGirls.concat(myBoys);
+
+document.getElementById("demo").innerHTML = myChildren;
+
+output:Cecilie,Lone,Emil,Tobias,Linus
+
+note:The concat() method does not change the existing arrays. It always returns a new array.
+
+*)Splicing and Slicing Arrays
+
+The splice() method adds new items to an array.
+The slice() method slice out a piece of an aaray.
+
+//splice() can be used add new items to an array
+const fruits=["Banana" ,"Orange","Apple","Mango"];
+fruits.splice(2,0,"Lemon","Kiwi");
+document.write(fruits);
+
+//The first Parameter (2) defines the position where new elements should be added (spliced in).
+//The second parameter(0) defines how many elements should be removed.
+//The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added.
+
+*)Using splice() to Remove Elements
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(0, 1);
+
+The first parameter (0) defines the position where new elements should be added (spliced in).
+
+The second parameter (1) defines how many elements should be removed.
+
+The rest of the parameters are omitted. No new elements will be added.
+
+
+*)function is block of code which executed when something invokes
+
+*)ReturnaValue from a Function with Return
+
+
+   function text(){
+        var MyText="let see how it will work";
+        return MyText;
+    }
+
+   document.write("<br>"+text());
+
+   function multiplication(a){
+    return a * 5;
+   }
+
+   console.log(multiplication(5));
+
+
+*)Assignment With a Returned value
+
+*)Boolans Value
+ True,flase
+
+*)Conditional Statements
+Very often when you write code, you want to perform different actions for different decisions.
+
+*)Equality operators
+"="
+"=="
+"===" 
+
+*)Practice Comparing Different value
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
